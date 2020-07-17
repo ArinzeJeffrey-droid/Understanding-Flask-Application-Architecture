@@ -17,14 +17,6 @@ def ask():
 def answer():
     return render_template("answer.html")
 
-@main.route("/login")
-def login():
-    return render_template("login.html")
-
-@main.route("/")
-def question():
-    return render_template("register.html")
-
 @main.route("/unanswered")
 def unanswered():
     return render_template("unanswered.html")
